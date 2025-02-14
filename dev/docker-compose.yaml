@@ -25,7 +25,7 @@ services:
       - /docker-entrypoint.sh
     command: ['envshell']
     ports:
-      - 127.0.0.1:8000:8000
+      - 148.251.83.70:8000:8000
     depends_on:
       - redis
       - arangodb
@@ -41,7 +41,7 @@ services:
       dockerfile: ./docker/dev/Dockerfile
     image: yeti-feeds-frontend
     ports:
-      - 127.0.0.1:8080:8080
+      - 148.251.83.70:8080:8080
       - 127.0.0.1:3000:3000
     volumes:
       - ./yeti-feeds-frontend/:/app
