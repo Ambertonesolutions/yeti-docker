@@ -16,4 +16,4 @@ jobs:
       - name: Sleep for 1 minute
         run: sleep 60
       - name: Test access to the web UI
-        run: curl http://localhost:8000/api/v2/observables/
+        run: curl http://148.251.83.70:8000/api/v2/observables/
